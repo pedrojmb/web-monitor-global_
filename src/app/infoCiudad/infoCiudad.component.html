@@ -1,0 +1,22 @@
+<div class="container" #infoCiudad>
+  <div class="row">
+    <div class="col-md-4 md-4">
+      <h3>{{this.nombre}}</h3>
+      <tr class="col">
+        <td class="bordes">
+          <label>hora</label>
+          <label>{{this.hora | date: 'd/MM  HH:mm:ss' }}</label>
+        </td>
+        <td class="bordes">
+            <label>temperatura</label>
+            <label>{{this.temperatura}}</label>
+        </td> 
+        <td class="bordes">
+          <label class="geo">latitud: {{this.latitud}}</label>
+          <label class="geo">longitud: {{this.longitud}}</label>
+        </td>
+      </tr>
+    </div>
+  </div>
+</div>
+      
